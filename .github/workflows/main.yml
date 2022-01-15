@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
+        with:
+          ref: main
 
       - name: Get Theme
         run: git submodule update --init --recursive
