@@ -19,10 +19,12 @@ jobs:
     steps:
       # step1: 检查运行环境是否正常
       - uses: actions/checkout@v2
-        # 若您的代码中携带子模块，请务必书写如下内容
-        with:
-          submodules: true
-          fetch-depth: 0
+
+      - name: Get Theme
+        run: git submodule update --init --recursive
+
+      - name: Update theme to Latest commit
+        run: git submodule update --remote --merge
 
       # step2: 开始执行核心逻辑
       # name 是步骤的名称，相当于步骤的简明注释，但可有可无
