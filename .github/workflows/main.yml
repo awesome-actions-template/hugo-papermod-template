@@ -1,0 +1,56 @@
+# 工作流的名称
+name: hugo-deploy
+
+# 触发事件
+on:
+  # 当你向主分支 main 推送了代码时触发此工作流
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# jobs 此工作流执行的任务
+# 在 Workflows 中,各个 job 是并行执行的，但此处仅有 1 个 job
+jobs:
+  # job-id 在一个工作流中唯一区分，此 job-id 为 build
+  build:
+    # 此 job 运行的虚拟系统
+    runs-on: ubuntu-latest
+    # 此 job 的任务执行步骤，默认顺序执行
+    steps:
+      # step1: 检查运行环境是否正常
+      - uses: actions/checkout@v2
+        # 若您的代码中携带子模块，请务必书写如下内容
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      # step2: 开始执行核心逻辑
+      # name 是步骤的名称，相当于步骤的简明注释，但可有可无
+      - name: "Building..."
+        # uses FORMAT: 用户/仓库@版本信息
+        # uses 是 workflows 的精髓，其作用可概述为：预加载并运行指定资源
+        # 它可以指向 workflows-image，甚至可以具体到某个仓库中的一个可执行文件
+        # 此处使用 reuixiy/hugo-deploy@v1 桥接两个仓库
+        uses: reuixiy/hugo-deploy@v1
+
+        # env 环境变量
+        # job 中的每一个 step 都是独立的进程，其内创建的变量互不共享
+        # 但通过 env 创建的环境变量（键值对）可以被 step 所拉取的 actions 读取并使用
+        # 此处需要设定4个环境变量
+        env:
+          # DEPLOY_REPO 你部署 GitHub Pages 的可见代码库(如 username.github.io)
+          DEPLOY_REPO: ${{ github.repository }}
+
+          # DEPLOY_BRANCH 你部署 GitHub Pages 的可见代码库的分支
+          # 如果你已在 username.github.io 创建博客，请务必不写 main,master 等主分支名词防止代码覆盖
+          # 创建其他分支，仅需切换设置页面中 Pages 的生成分支即可，无需担心源码覆盖问题
+          DEPLOY_BRANCH: gh-pages
+
+          # DEPLOY_KEY 操作权限（非对称）密钥
+          # 你的私有源码仓库下部署的工作流读取私钥，为的是获取对你部署 GitHub Pages 的可见仓库的（读写）权限
+          # 不要弄混，workflows 读取的是 Secrets Key，只是此处的变量名叫 DEPLOY_KEY
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+
+          # TZ 时区信息，主要为了 git commit -m "xxx" 提供备注信息
+          # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+          TZ: Asia/Shanghai
