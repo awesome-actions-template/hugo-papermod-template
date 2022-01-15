@@ -51,7 +51,7 @@ jobs:
           # DEPLOY_KEY 操作权限（非对称）密钥
           # 你的私有源码仓库下部署的工作流读取私钥，为的是获取对你部署 GitHub Pages 的可见仓库的（读写）权限
           # 不要弄混，workflows 读取的是 Secrets Key，只是此处的变量名叫 DEPLOY_KEY
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          DEPLOY_KEY: ${{ secrets.GITHUB_TOKEN }}
 
           # TZ 时区信息，主要为了 git commit -m "xxx" 提供备注信息
           # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
