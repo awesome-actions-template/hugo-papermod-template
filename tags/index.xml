@@ -9,56 +9,11 @@
       <link>https://awesome-actions-template.github.io/hugo-papermod-template/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://awesome-actions-template.github.io/hugo-papermod-template/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>css</title>
-      <link>https://awesome-actions-template.github.io/hugo-papermod-template/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://awesome-actions-template.github.io/hugo-papermod-template/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://awesome-actions-template.github.io/hugo-papermod-template/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>https://awesome-actions-template.github.io/hugo-papermod-template/tags/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/tags/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>text</title>
-      <link>https://awesome-actions-template.github.io/hugo-papermod-template/tags/text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/tags/text/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://awesome-actions-template.github.io/hugo-papermod-template/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>emoji</title>
       <link>https://awesome-actions-template.github.io/hugo-papermod-template/tags/emoji/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://awesome-actions-template.github.io/hugo-papermod-template/tags/emoji/</guid>
       <description></description>

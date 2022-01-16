@@ -9,41 +9,14 @@
       <link>https://awesome-actions-template.github.io/hugo-papermod-template/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://awesome-actions-template.github.io/hugo-papermod-template/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://awesome-actions-template.github.io/hugo-papermod-template/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://awesome-actions-template.github.io/hugo-papermod-template/posts/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Hello World</title>
+      <link>https://awesome-actions-template.github.io/hugo-papermod-template/posts/hello-world/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/posts/markdown-syntax/</guid>
-      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://awesome-actions-template.github.io/hugo-papermod-template/posts/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/posts/placeholder-text/</guid>
-      <description>Lorem Ipsum Dolor Si Amet</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://awesome-actions-template.github.io/hugo-papermod-template/posts/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/posts/math-typesetting/</guid>
-      <description>A brief guide to setup KaTeX</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://awesome-actions-template.github.io/hugo-papermod-template/posts/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/posts/emoji-support/</guid>
-      <description>Guide to emoji usage in Hugo</description>
+      <guid>https://awesome-actions-template.github.io/hugo-papermod-template/posts/hello-world/</guid>
+      <description>Guide to Hugo-PaperMod-Template</description>
     </item>
     
   </channel>
