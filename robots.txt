@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://awesome-actions-template.github.io/hugo-papermod-template/sitemap.xml
