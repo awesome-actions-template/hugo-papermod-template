@@ -2,7 +2,7 @@
 
 ## How to use this template
 
-1. Click the "Use this template" button above.
+1. Click the `Use this template` button above. Create a new repo from this template. Rename it to `<your_repo_name>`. **Don't forget to check the box `Include all branches`.**
 2. Change the `baseURL` in `config.yml` to your site's URL. e.g. `https://<your_github_id>.github.io/<your_repo_name>`
 3. Open GitHub Pages in your repo's `Settings -> Pages -> Source: Deploy from a branch -> Branch: gh_pages -> Folder: /root -> Save`.
 4. (\*Optional)Create a markdown file to write your content in `content` folder.
