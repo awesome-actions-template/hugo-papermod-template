@@ -9,4 +9,4 @@
 5. (\*Optional)Commit and push your changes to your repo.
 6. Bingo! Your site is live at `https://<your_github_id>.github.io/<your_repo_name>`
 
-Notice: If you meet the problem like `remote: Permission to xxx denied to github-actions[bot].` when you push your changes, you need to give the permission to the `github-actions[bot]` in your repo's `Settings -> Actions -> General -> Workflow permissions -> Read and write permissions -> Save`.
+Notice: If you meet the problem like `remote: Permission to xxx denied to github-actions[bot].` when you push your changes, you need to give the permission to the `github-actions[bot]` in your repo's by following the steps below: `Settings -> Actions -> General -> Workflow permissions -> Read and write permissions -> Save`.
